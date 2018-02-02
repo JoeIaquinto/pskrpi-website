@@ -1576,6 +1576,27 @@
 			text-align: center;
 		}
 
+	#registration-wrapper {
+		position: relative;
+		overflow: hidden;
+		background: #fff;
+		color: #fff;
+		text-align: center;
+		border-bottom: solid 2px #e5e5e5;
+		box-shadow: inset 0px -8px 0px 0px #fff, inset 0px -10px 0px 0px #e5e5e5, inset 0px 8px 0px 0px #fff, inset 0px 10px 0px 0px #e5e5e5;
+	}
+
+		#registration-wrapper .inner {
+			background: url("../../images/registration.jpg");
+			background-size: cover;
+		}
+
+		#registration-wrapper p {
+			text-align: center;
+		}
+
+
+
 	#features-wrapper {
 		position: relative;
 		overflow: hidden;
@@ -1981,6 +2002,49 @@
 				}
 
 				#banner:after {
+					-moz-transform: scaleX(-1);
+					-webkit-transform: scaleX(-1);
+					-ms-transform: scaleX(-1);
+					transform: scaleX(-1);
+					right: 0;
+				}
+
+		/* Banner */
+
+			#registration {
+				padding: 10em 0 10em 0;
+			}
+
+				#registration p {
+					font-size: 2em;
+					line-height: 1.5em;
+					letter-spacing: 4px;
+				}
+
+				#registration a {
+					font-size: 2em;
+					color: #fff;
+					line-height: 1.5em;
+					letter-spacing: 4px;
+				}
+
+				#registration:before, #registration:after {
+					content: '';
+					display: block;
+					position: absolute;
+					top: 50%;
+					width: 35px;
+					height: 141px;
+					margin-top: -70px;
+					background: url("images/bracket.svg");
+					opacity: 0.15;
+				}
+
+				#registration:before {
+					left: 0;
+				}
+
+				#registration:after {
 					-moz-transform: scaleX(-1);
 					-webkit-transform: scaleX(-1);
 					-ms-transform: scaleX(-1);
